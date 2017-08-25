@@ -22,13 +22,29 @@ h1 {
 .column-container {
   border: 2px solid red;
   display: flex;
+    flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
+  padding: 0 5px;
 }
 
 .column {
   background-color: #777;
-  min-width: 25%;
+  margin-bottom: 10px;
+  width: 33%;
+}
+
+.column .card {
+  background-color: #555;
+}
+
+
+.column:nth-of-type(odd) {
+  background-color: #328D32;
+}
+
+.column:nth-of-type(odd) .card {
+  background-color: #226022;
 }
 
 .column-title {
@@ -38,6 +54,7 @@ h1 {
 .column-card-list {
   list-style: none;
   margin-top: 20px;
+  padding: 0 2%;
   text-align: left;
 }
 
@@ -45,7 +62,8 @@ h1 {
   display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 5px;
+  margin: 5px auto;
+  padding: 15px 1%;
 }
 
 .button {
