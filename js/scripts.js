@@ -17,7 +17,7 @@ $(document).ready(function(){
     var self = this;
 
     this.id = randomString();
-    this.name = name || 'Kolumna bez nazwy';
+    this.name = name;
     this.$element = createColumn();
 
     function createColumn() {
