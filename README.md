@@ -1,2 +1,3 @@
-# kodilla_11.6
-tablica_kanban
+# kanban_board
+
+simple kanban board - with no memory state after closing web browser tab
